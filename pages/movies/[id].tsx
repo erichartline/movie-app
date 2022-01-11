@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import useSWR from "swr";
+import { Box } from "@chakra-ui/react";
 import { getMovieEndpoint } from "../../lib/tmdb";
 
 const Movie = () => {
@@ -8,18 +9,14 @@ const Movie = () => {
   const { data, error } = useSWR(id ? getMovieEndpoint(id) : null);
 
   if (error) {
-    return <div>failed to load :(</div>;
+    return <Box>failed to load :(</Box>;
   }
 
   if (!data) {
-    return <div>loading...</div>;
+    return <Box>loading...</Box>;
   }
 
-  return (
-    <div>
-      <div>{data.title}</div>
-    </div>
-  );
+  return <Box>{data.title}</Box>;
 };
 
 export default Movie;
