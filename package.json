@@ -8,12 +8,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.7.4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "axios": "^0.24.0",
+    "framer-motion": "^5",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "swr": "^1.1.2"
   },
   "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/react": "^17.0.38",
+    "enzyme": "^3.11.0",
     "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "typescript": "^4.5.4"
   }
 }
