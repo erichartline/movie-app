@@ -15,7 +15,7 @@ const MovieList = ({ title, url }) => {
 
   return (
     <Box>
-      <Heading as="h2" size="xl" pb={2}>
+      <Heading as="h2" size="lg" pb={2}>
         {title}
       </Heading>
       <Stack direction="row" overflowX="auto" pl={1}>
